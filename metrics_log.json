@@ -1,0 +1,68 @@
+[
+  {
+    "kondisi": "B1",
+    "strategi": "scratch",
+    "lr": "1e-3",
+    "trainable": 11181642,
+    "epoch_konv": 8,
+    "durasi_s": 120.3,
+    "val_acc": 0.5235,
+    "test_acc": 0.4636,
+    "test_f1": 0.4231
+  },
+  {
+    "kondisi": "B2",
+    "strategi": "feature",
+    "lr": "1e-3 fc",
+    "trainable": 5130,
+    "epoch_konv": 22,
+    "durasi_s": 220.3,
+    "val_acc": 0.9195,
+    "test_acc": 0.9073,
+    "test_f1": 0.9094
+  },
+  {
+    "kondisi": "B3",
+    "strategi": "finetune",
+    "lr": "1e-4 layer4 / 1e-3 fc",
+    "trainable": 8398858,
+    "epoch_konv": 5,
+    "durasi_s": 81.4,
+    "val_acc": 0.9195,
+    "test_acc": 0.8874,
+    "test_f1": 0.888
+  },
+  {
+    "kondisi": "B4-noaug",
+    "strategi": "finetune",
+    "lr": "1e-4/1e-3 no-aug",
+    "trainable": 8398858,
+    "epoch_konv": 3,
+    "durasi_s": 46.2,
+    "val_acc": 0.9329,
+    "test_acc": 0.894,
+    "test_f1": 0.8947
+  },
+  {
+    "kondisi": "B4-aug",
+    "strategi": "finetune",
+    "lr": "1e-4/1e-3 aug",
+    "trainable": 8398858,
+    "epoch_konv": 4,
+    "durasi_s": 72.5,
+    "val_acc": 0.9329,
+    "test_acc": 0.894,
+    "test_f1": 0.8948
+  },
+  {
+    "kondisi": "B5",
+    "strategi": "effnet-b0",
+    "lr": "1e-3 head",
+    "trainable": 12810,
+    "epoch_konv": 16,
+    "durasi_s": 156.8,
+    "val_acc": 0.8926,
+    "test_acc": 0.9272,
+    "test_f1": 0.9287
+  }
+]
